@@ -1,5 +1,5 @@
 .footer_content_box {
-	background: url('../images/footer_content_bg.jpg');
+	background: url('../images/footer_content_bg.jpg') center no-repeat;
 	background-size: 100% auto;
 	color: #8d9bca;
 }
@@ -49,5 +49,38 @@
 
 
 @media only screen and (max-width: 768px) {
+	.footer_content {
+		text-align: center;
+	}
 
+	.footer_content_box {
+		background-size: auto 100%;
+	}
+
+	.empty_logo {
+		display: inline-block;
+	}
+
+	.connect_list {
+		position: static;
+		border-top: 1px solid #3f55a1;
+		transform: none;
+	    -ms-transform: none;
+	    -moz-transform: none;
+	    -webkit-transform: none;
+	    -o-transform: none;
+	    text-align: left;
+	    padding: 0 4%;
+	    font-size: 0;
+	}
+
+	.connect_list li {
+		display: inline-block;
+		width: 50%;
+		font-size: 1rem;
+	}
+
+	.footer_bar {
+		display: none;
+	}
 }
