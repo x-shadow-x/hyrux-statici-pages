@@ -1,0 +1,104 @@
+.banner_box img {
+	width: 100%;
+}
+
+.main_contain {
+	text-align: center;
+	padding: 3rem 0;
+	width: 96%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+article h2 {
+	margin-bottom: 3rem;
+	font-size: 1.8rem;
+}
+
+article p {
+	line-height: 2rem;
+	color: #808080;
+}
+
+.bottoom_article {
+	text-align: left;
+	background: #F7F7F7;
+	padding: 1rem;
+	margin-bottom: 3rem;
+}
+.detail_item_list {
+	border: 1px solid #ccc;
+	font-size: 0;
+	margin: 3rem auto 2rem auto;
+}
+
+.detail_item_list li {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.2rem;
+	color: #142D91;
+	width: 20%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+.detail_item_list li a {
+	display: block;
+	padding: 2rem 0;
+}
+
+.detail_item_list li a:hover {
+	background: #F7F7F7;
+}
+
+.detail_item_list li + li {
+	border-left: 1px solid #ccc;
+}
+
+.detail_item_list .detail_icon {
+	display: inline-block;
+	width: 100%;
+	height: 0;
+	padding-top: 40%;
+	background: url('../images/virtual_office.png') center no-repeat;
+	background-size: auto 100%;
+	margin-bottom: 1rem;
+}
+
+.detail_item_list .company_registration {
+	background-image: url('../images/company_registration.png');
+}
+
+.detail_item_list .account_audit {
+	background-image: url('../images/account_audit.png');
+}
+
+.detail_item_list .trademark {
+	background-image: url('../images/trademark.png');
+}
+
+.detail_item_list .advanced_services {
+	background-image: url('../images/advanced_services.png');
+}
+
+@media only screen and (max-width: 768px) {
+	.main_contain {
+		width: 96%;
+	}
+
+	.detail_item_list {
+		border: none;
+	}
+
+	.detail_item_list li {
+		display: block;
+		width: auto;
+		border: 1px solid #ccc;
+		margin-bottom: 3rem;
+	}
+
+	.detail_item_list .detail_icon {
+		padding-top: 10rem;
+	}
+}

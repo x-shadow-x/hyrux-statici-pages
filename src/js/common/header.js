@@ -30,4 +30,20 @@ $(function() {
 		});
 	}
 
+	if(clientWidth > 768 && clientWidth <= 1300) {
+		$('#middleScreenMoreListBtn').click(function(e) {
+			e.stopPropagation();
+			var targetEl = $('#middleScreenMoreList');
+			if(targetEl.is(':visible')) {
+				targetEl.slideUp(100);
+			} else {
+				targetEl.slideDown(100);
+			}
+		});
+
+		$('body').click(function() {
+			$('#middleScreenMoreList').hide();
+		});
+	}
+
 })
