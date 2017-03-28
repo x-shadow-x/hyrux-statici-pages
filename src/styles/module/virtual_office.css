@@ -1,0 +1,102 @@
+.banner_box {
+	font-size: 0;
+}
+
+.banner_box img {
+    width: 100%;
+}
+
+.main_contain {
+	text-align: center;
+	padding: 6rem 0;
+	width: 96%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.main_contain section {
+	margin-top: 4rem;
+}
+
+section h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.step_box {
+	display: inline-block;
+	vertical-align: middle;
+	color: #b1b1b1;
+}
+
+.step_box + .step_box:before {
+	content: '';
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 14px;
+	height: 8px;
+	background: url('../images/arrow.png') center no-repeat;
+	background-size: auto 100%;
+	margin: 0 10px 0 0px;
+}
+
+.step_box .step {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	border-radius: 100px;
+	background: #b1b1b1;
+	color: #fff;
+	margin-right: 5px;
+}
+
+.step_box .step i {
+	font-style: normal;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+
+.step_content {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.step_box.done {
+	color: #0e2f8a;
+}
+
+.step_box.done .step {
+	background: #0e2f8a;
+}
+
+.detail_list {
+	margin: 0 auto;
+}
+
+.detail_list tr {
+	text-align: left;
+}
+
+.detail_list td {
+	width: 50%;
+	padding: .6rem 0;
+}
+
+.detail_list .item_name {
+	font-weight: bolder;
+}
+
+.conditions_box {
+	border: 1px solid #ccc;
+	width: 80%;
+	height: 10rem;
+	overflow: auto;
+}

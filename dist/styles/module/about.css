@@ -4,7 +4,7 @@
 
 .main_contain {
 	text-align: center;
-	padding: 3rem 0;
+	padding: 6rem 0;
 	width: 96%;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -24,7 +24,6 @@ article p {
 	text-align: left;
 	background: #F7F7F7;
 	padding: 1rem;
-	margin-bottom: 3rem;
 }
 .detail_item_list {
 	border: 1px solid #ccc;
