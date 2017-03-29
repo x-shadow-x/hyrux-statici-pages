@@ -1,0 +1,42 @@
+.detail_list {
+	width: 100%;
+	text-align: left;
+}
+
+.detail_list td {
+	border: 1px solid #ddd;
+	width: 50%;
+	background: #fcfcfc;
+	vertical-align: middle;
+	line-height: 4rem;
+	padding: 0 1rem;
+}
+
+.pc_line td {
+	background: #0e2f8a;
+	color: #fff;
+}
+
+.mobile_line {
+	display: none;
+}
+
+.service_item_box {
+	position: relative;
+	padding: 20px;
+}
+
+.service_item_box:before {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #0e2f8a;
+	border-radius: 100px;
+	left: 4px;
+	top: 1rem;
+	margin-top: -5px;
+}
+
+@media only screen and (max-width: 768px) {
+}
