@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="max-age=3600" />
+	<meta http-equiv="Cache-Control" content="no-transform"/>
+	<meta name="MobileOptimized" content="240" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+	<title>Virtual Office</title>
+	<link rel="stylesheet" href="../styles/common/cn.css">
+	<link rel="stylesheet" href="../styles/common/header.css">
+	<link rel="stylesheet" href="../styles/common/footer.css">
+	<link rel="stylesheet" href="../styles/common/font-awesome.min.css">
+	<link rel="stylesheet" href="../styles/module/virtual_office.css">
+	<link rel="stylesheet" href="../styles/module/virtual_office_step2.css">
+
+	<script src="../js/common/set_rem.js"></script>
+	
+</head>
+<body>
+	@@include('../include/header.html')
+
+	<div class="main">
+		<div class="banner_box">
+			<img src="../styles/images/virtual_office_banner_pic.jpg" alt="banner图">
+		</div>
+		<section class="main_contain">
+			<section>
+				<h2>VIRTUAL OFFICE PACKAGE - ONLINE APPLICATION</h2>
+				<div class="application_step">
+					<div class="step_box done">
+						<span class="step">
+							<i>1</i>
+						</span>
+						<span class="step_content">Choose the Service</span>
+					</div>
+					<div class="step_box done">
+						<span class="step">
+							<i>2</i>
+						</span>
+						<span class="step_content">input Personal Info</span>
+					</div>
+					<div class="step_box">
+						<span class="step">
+							<i>3</i>
+						</span>
+						<span class="step_content">Confirm & Submit</span>
+					</div>
+					<div class="step_box">
+						<span class="step">
+							<i>4</i>
+						</span>
+						<span class="step_content">Payment</span>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>SERVICE CHOSEN: PROFESSIONAL SECRETARY SERVICE PACKAGE</h2>
+				<table class="detail_list">
+					<tr>
+						<td class="item_name">LOCATION</td>
+						<td>
+							<p class="mobile_item_name">LOCATION</p>
+							<input type="radio" name="location" id="company"><label for="company">COMPANY</label>
+							<input type="radio" name="location" id="personal"><label for="personal">PERSONAL</label>
+						</td>
+					</tr>
+					<tr>
+						<td class="item_name">
+							<p>COMPONY NAME(ENGLISH)</p>
+							<p>COMPONY NAME(CHINESE)</p>
+							<p>BUSINESS REGISTRATION NO</p>
+						</td>
+						<td>
+							<p class="mobile_item_name">COMPONY NAME(ENGLISH)</p>
+							<input type="text">
+							<p class="mobile_item_name">COMPONY NAME(CHINESE)</p>
+							<input type="text">
+							<p class="mobile_item_name">BUSINESS REGISTRATION NO</p>
+							<input type="text">
+						</td>
+					</tr>
+					<tr>
+						<td class="item_name">
+							<p>Contact</p>
+							<p>TITLE</p>
+							<p>LISTNAME</p>
+							<p>FIRSNAME</p>
+						</td>
+						<td>
+							<div class="line_filler"></div>
+							<p class="mobile_item_name">Contact</p>
+							<p class="mobile_item_name">TITLE</p>
+							<select>
+								<option value="Mr.">Mr.</option>
+								<option value="Mr.">Mr.</option>
+								<option value="Mr.">Mr.</option>
+							</select>
+							<p class="mobile_item_name">LISTNAME</p>
+							<input type="text">
+							<p class="mobile_item_name">FIRSNAME</p>
+							<input type="text">
+						</td>
+					</tr>
+					<tr>
+						<td class="item_name">
+							<p>ID NUMBER</p>
+							<p>ISSUE COUNTRY</p>
+							<p>PHONE</p>
+							<p>EMAIL</p>
+							<p>CONTACT ADDRESS</p>
+						</td>
+						<td>
+							<p class="mobile_item_name">ID NUMBER</p>
+							<select>
+								<option value="Mr.">Hong Kong ID Card</option>
+								<option value="Mr.">Hong Kong ID Card</option>
+								<option value="Mr.">Hong Kong ID Card</option>
+							</select>
+							<p class="mobile_item_name">ISSUE COUNTRY</p>
+							<input type="text">
+							<p class="mobile_item_name">PHONE</p>
+							<input type="text">
+							<p class="mobile_item_name">EMAIL</p>
+							<input type="text">
+							<p class="mobile_item_name">CONTACT ADDRESS</p>
+							<input type="text">
+						</td>
+					</tr>
+				</table>
+			</section>
+
+			<div class="application_btn_box">
+				<a href="javascript:void(0)" class="application_btn">NEXT</a>
+			</div>
+		</section>
+	</div>
+
+	@@include('../include/footer.html')
+	<script src="../js/common/jquery-1.12.4.min.js"></script>
+	<script src="../js/common/header.js"></script>
+</body>
+</html>
