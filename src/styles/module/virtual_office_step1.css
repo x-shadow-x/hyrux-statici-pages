@@ -8,7 +8,7 @@
 	width: 50%;
 	background: #fcfcfc;
 	vertical-align: middle;
-	line-height: 4rem;
+	line-height: 2rem;
 	padding: 0 1rem;
 }
 
@@ -23,7 +23,7 @@
 
 .service_item_box {
 	position: relative;
-	padding: 20px;
+	padding: 1rem 20px;
 }
 
 .service_item_box:before {
@@ -33,10 +33,24 @@
 	height: 10px;
 	background: #0e2f8a;
 	border-radius: 100px;
-	left: 4px;
-	top: 1rem;
+	left: 2px;
+	top: 2rem;
 	margin-top: -5px;
 }
+
+.daterangepicker .fa {
+	margin-right: 0;
+}
+
+.daterangepicker .fa-arrow-left:before,
+.daterangepicker .fa-arrow-right:before {
+	display: none;
+}
+
+.ranges li:last-child {
+	display: none;
+}
+
 
 @media only screen and (max-width: 768px) {
 }
