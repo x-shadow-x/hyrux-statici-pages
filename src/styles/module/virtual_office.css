@@ -29,10 +29,10 @@ section h2 {
 	color: #b1b1b1;
 }
 
-.step_box + .step_box:before {
+.step_box.done:after {
 	content: '';
 	display: inline-block;
-	vertical-align: text-bottom;
+	vertical-align: middle;
 	width: 14px;
 	height: 8px;
 	background: url('../images/arrow.png') center no-repeat;
@@ -79,6 +79,7 @@ section h2 {
 
 .detail_list {
 	margin: 0 auto;
+	color: #b1b1b1;
 }
 
 .detail_list tr {
@@ -92,11 +93,209 @@ section h2 {
 
 .detail_list .item_name {
 	font-weight: bolder;
+	color: #333;
 }
 
 .conditions_box {
 	border: 1px solid #ccc;
 	width: 80%;
-	height: 10rem;
-	overflow: auto;
+	height: 26rem;
+	overflow-y: scroll;
+	margin: 0 auto;
+	text-align: left;
+	padding: 1rem;
+}
+
+.conditions_box.conditions_box_short {
+	height: 9rem;
+}
+
+.conditions_box h4 {
+	font-weight: normal;
+	margin-bottom: 1rem;
+}
+
+.conditions_box .conditions_item {
+	position: relative;
+	padding-left: 1.4rem;
+}
+
+.conditions_box .conditions_item:before {
+	content: '';
+	position: absolute;
+	background: #0e2f8a;
+	width: 10px;
+	height: 10px;
+	border-radius: 100px;
+	left: .1rem;
+	top: .75rem;
+	margin-top: -5px;
+}
+
+.conditions_box p {
+	margin-bottom: 1rem;
+	line-height: 1.7rem;
+}
+
+.conditions_box.conditions_box_short p {
+	margin-bottom: 0;
+}
+
+.agree_box {
+	text-align: left;
+	width: 80%;
+	margin: 0 auto;
+	padding: 1rem 2rem 0 0;
+}
+
+.agree_box input {
+	vertical-align: text-top;
+	margin-top: .5rem;
+}
+
+.agree_box label {
+	line-height: 2rem;
+	display: inline-block;
+	vertical-align: text-top;
+	max-width: 93%;
+}
+
+.agree_box label input {
+	
+}
+
+.payment_box {
+	font-size: 0;
+}
+
+.payment_style h2 {
+	font-size: 1.4rem;
+	margin-bottom: 0;
+}
+
+.payment_box .payment_style {
+	line-height: 2rem;
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-align: center;
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	border-right: 1px solid #ccc;
+	min-height: 16rem;
+}
+
+.payment_style + .payment_style {
+	border: none;
+}
+
+.payment_title {
+	font-size: 1.5rem;
+	color: #0e2f8a;
+}
+
+figure {
+	font-size: 0;
+	position: relative;
+}
+
+figcaption {
+	text-align: left;
+	position: absolute;
+	left: 0;
+	top: 5rem;
+	line-height: 1.5rem;
+}
+
+.payment_item {
+	font-size: 1.2rem;
+	display: inline-block;
+	vertical-align: top;
+	max-width: 32%;
+	box-sizing: border-box;
+}
+
+.payment_item + .payment_item {
+	margin-left: 2%;
+}
+
+.payment_item img {
+	height: 5rem;
+	max-width: 100%;
+}
+
+.get_invoice_btn_box {
+	margin: 2rem auto;
+}
+
+.get_invoice_btn {
+	display: inline-block;
+	border-radius: 6px;
+	color: #fff;
+	background: #0e2f8a;
+	line-height: 3.6rem;
+	padding: 0 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+	.application_step {
+		text-align: left;
+	}
+
+	.application_step {
+		font-size: 0;
+	}
+
+	.step_box {
+		font-size: 1.2rem;
+		width: 50%;
+		line-height: 3.2rem;
+	}
+
+	.step_box.done {
+		position: relative;
+	}
+
+	.step_box.done:after {
+		margin-right: 0;
+		position: absolute;
+		right: 5%;
+		top: 50%;
+		transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+	}
+
+	.conditions_box,
+	.agree_box {
+		width: auto;
+	}
+
+	.detail_list td {
+		padding-right: 2.4rem;
+	}
+
+	.detail_list td + td {
+		padding-right: 0;
+	}
+
+	.payment_box .payment_style {
+		display: block;
+		width: auto;
+		padding: 2rem 0;
+		border-right: none;
+		border-bottom: 1px solid #ccc;
+		min-height: 0;
+	}
+
+	.payment_style + .payment_style {
+		border: none;
+		min-height: 16rem;
+	}
 }
