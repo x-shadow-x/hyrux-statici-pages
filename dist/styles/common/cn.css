@@ -191,6 +191,11 @@ input, select {
 }
 
 .main_contain {
+    text-align: center;
+    padding: 4rem 0;
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
     opacity: 0;
     transition: opacity 1s .6s;
     -moz-transition: opacity 1s .6s;
@@ -206,6 +211,7 @@ input, select {
     position: relative;
     padding-top: 34.7%;
     overflow: hidden;
+    font-size: 0;
 }
 
 .banner_box img {
@@ -235,11 +241,11 @@ input, select {
 
 .banner_pic_title {
     font-size: 4rem;
-    height: 0;
-    transition: height .8s, opacity 1s;
-    -moz-transition: height .8s, opacity 1s;
-    -webkit-transition: height .8s, opacity 1s;
-    -o-transition: height .8s, opacity 1s;
+    opacity: 0;
+    transition: opacity 1.2s;
+    -moz-transition: opacity 1.2s;
+    -webkit-transition: opacity 1.2s;
+    -o-transition: opacity 1.2s;
 }
 
 .banner_pic_dec {
@@ -261,8 +267,6 @@ input, select {
 
 .main.play .banner_pic_title {
     opacity: 1;
-    height: 4rem;
-    line-height: 4rem;
 }
 
 .main.play .banner_pic_dec {

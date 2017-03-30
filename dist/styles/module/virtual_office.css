@@ -1,21 +1,5 @@
-.banner_box {
-	font-size: 0;
-}
-
-.banner_box img {
-    width: 100%;
-}
-
-.main_contain {
-	text-align: center;
-	padding: 3rem 0;
-	width: 96%;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-.main_contain section {
-	margin-top: 4rem;
+.main_contain section  + section {
+	margin-top: 6rem;
 }
 
 section h2 {
@@ -120,10 +104,6 @@ section h2 {
 		-webkit-transform: translateX(-50%);
 		-o-transform: translateX(-50%);
 		z-index: -1;
-	}
-
-	.main_contain {
-		padding-top: 0;
 	}
 
 	.application_step {
