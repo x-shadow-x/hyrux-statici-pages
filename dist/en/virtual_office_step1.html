@@ -73,11 +73,18 @@
 	    </div>
     </div>
 </header>
+<section class="loading" id="loading">
+	<span class="loading_icon"></span>
+</section>
 
 
-	<div class="main">
+	<div class="main" id="main">
 		<div class="banner_box">
-			<img src="../styles/images/virtual_office_banner_pic.jpg" alt="banner图">
+			<div class="banner_pic_text_box">
+				<p class="banner_pic_title">Virtual Office</p>
+				<p class="banner_pic_dec">Offer Secretary service mail handling,call answering, fax and a range of options ti accommodate your need</p>
+			</div>
+			<img data-src="../styles/images/virtual_office_banner_pic.jpg" alt="banner图" class="lazing_img">
 		</div>
 		<section class="main_contain">
 			<section>
@@ -124,7 +131,8 @@
 					<tr>
 						<td>Basic Secretary Service Package</td>
 						<td>
-							<div class="service_item_box">
+							<p class="mobile_item_name">PACKAGE</p>
+							<div class="service_item_box first_item">
 								<p>Using Hyrux office address as your registration address</p>
 							</div>
 							<div class="service_item_box">
@@ -150,9 +158,21 @@
 					<tr>
 						<td>Effective Date</td>
 						<td>
-							<div id="reportrange" class="pull-left dateRange filter_item" style="width:295px">
-								<span id="searchDateRange"></span>
+							<p class="mobile_item_name">EFFECTIVE DATE</p>
+
+							<div id="reportrange" class="dateRange">
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+								<span id="searchDateRange" class="date_text"></span>
 							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Fee</td>
+						<td>
+							<p class="mobile_item_name">FEE</p>
+							<p>#Pay for one year</p>
+							<p>Monthly Fee: HK$ 198</p>
+							<p>Total Charge: HK$ 2,376</p>
 						</td>
 					</tr>
 				</table>

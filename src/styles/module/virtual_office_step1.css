@@ -9,7 +9,7 @@
 	background: #fcfcfc;
 	vertical-align: middle;
 	line-height: 2rem;
-	padding: 0 1rem;
+	padding: 1rem;
 }
 
 .pc_line td {
@@ -38,6 +38,8 @@
 	margin-top: -5px;
 }
 
+
+
 .daterangepicker .fa {
 	margin-right: 0;
 }
@@ -47,10 +49,113 @@
 	display: none;
 }
 
-.ranges li:last-child {
+.date_icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+.dateRange {
+	width: 100%;
+	margin: .5rem auto;
+	position: relative;
+}
+
+.fa-calendar {
+	padding: 6px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: 2rem;
+	background: #0e2f8a;
+	color: #fff;
+	width: 2.5rem;
+	text-align: center;
+}
+
+.dateRange .date_text {
+	margin-left: 2.5rem;
+}
+
+.daterangepicker.opensleft .ranges {
+	float: none;
+}
+
+.daterangepicker .ranges .range_inputs>div {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.daterangepicker_start_input,
+.daterangepicker_end_input {
 	display: none;
+}
+
+.daterangepicker .ranges {
+	text-align: center;
+}
+
+.range_inputs .btn {
+	padding: .5rem 2rem;
+	text-align: center;
+	border: none;
+	outline: none;
+	color: #fff;
+	border-radius: 4px;
+	width: 112px;
+	margin: 5px 0 0 0;
+}
+
+.mobile_item_name {
+	display: none;
+	color: #0e2f8a;
+	font-weight: bolder;
+}
+
+.range_inputs .btn + .btn {
+	margin-left: 10px;
 }
 
 
 @media only screen and (max-width: 768px) {
+
+	.detail_list tr:first-child {
+		display: none;
+	}
+
+	.detail_list td:first-child {
+		display: none;
+	}
+
+	.daterangepicker {
+		text-align: center;
+		max-width: 80%;
+		margin-bottom: 1rem;
+	}
+
+	.mobile_item_name {
+		display: block;
+	}
+
+	.service_item_box.first_item {
+		padding-top: 0;
+	}
+
+	.service_item_box.first_item:before {
+		top: 1rem;
+	}
+}
+
+@media only screen and (max-width: 607px) {
+	.daterangepicker {
+		max-width: 242px;
+	}
+	
+	.range_inputs .btn {
+		width: 100%;
+	}
+
+	.range_inputs .btn + .btn {
+		margin-left: 0;
+	}
+	
 }

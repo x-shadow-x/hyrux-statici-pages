@@ -1,3 +1,25 @@
+function init() {
+	var imgsLists = new Array($('.lazing_img').length);
+	
+	if(imgsLists.length > 0) {
+		$('.lazing_img').each(function(index, item) {
+			$(item).attr('src', $(item).attr('data-src'));
+			item.onload = function() {
+				imgsLists.pop();
+				if(imgsLists.length > 0) {
+				} else {
+					$('#loading').hide();
+					$('#main').addClass('play');
+				}
+			}
+		});
+	} else {
+		$('#loading').hide();
+		$('#main').addClass('play');
+	}
+	
+}
+
 $(function() {
 
 	var clientWidth = $(window).width();
@@ -46,4 +68,5 @@ $(function() {
 		});
 	}
 
+	init();
 })

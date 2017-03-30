@@ -8,7 +8,7 @@
 
 .main_contain {
 	text-align: center;
-	padding: 6rem 0;
+	padding: 3rem 0;
 	width: 96%;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -102,6 +102,29 @@ section h2 {
 
 
 @media only screen and (max-width: 768px) {
+
+	.banner_box {
+		position: relative;
+		padding-top: 87%;
+	}
+
+	.banner_box img {
+		width: auto;
+		height: 100%;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		z-index: -1;
+	}
+
+	.main_contain {
+		padding-top: 0;
+	}
 
 	.application_step {
 		text-align: left;
