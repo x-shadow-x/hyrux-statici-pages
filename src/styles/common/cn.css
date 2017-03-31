@@ -18,7 +18,7 @@ time, mark, audio, video {
 body {
     line-height: 1;
     font-family: GothamLight;
-    font-size: .85rem;
+    font-size: .95rem;
     color: #333;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -192,7 +192,7 @@ input, select {
 
 .main_contain {
     text-align: center;
-    padding: 4rem 0;
+    padding: 8rem 0 4rem 0;
     width: 96%;
     max-width: 1200px;
     margin: 0 auto;
@@ -278,7 +278,19 @@ input, select {
     -o-transform: scale(1, 1); 
 }
 
+table tr:nth-child(even){
+    background: #fcfcfc;
+}
+
+table tr:nth-child(odd){
+    background: #f3f3f3;
+}
+
 @media only screen and (max-width: 768px) {
+
+    .main_contain {
+        padding: 3rem 0;
+    }
     .banner_box {
         position: relative;
         padding-top: 87%;
