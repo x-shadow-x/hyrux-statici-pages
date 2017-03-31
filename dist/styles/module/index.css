@@ -1,0 +1,62 @@
+.main_contain {
+	color: #808080;
+}
+
+section h2,
+article h2 {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+article p {
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+section + section {
+	margin-top: 6rem;
+}
+
+.service_lists {
+	font-size: 0;
+}
+
+figure  img {
+	width: 100%;
+}
+
+.service_item {
+	display: inline-block;
+	vertical-align: middle;
+	width: 23.5%;
+	font-size: .95rem;
+	line-height: 2rem;
+}
+
+.service_item h2 {
+	margin: 1rem auto;
+	font-size: 1.2rem;
+}
+
+.service_item + .service_item {
+	margin-left: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+ 	section + section {
+ 		margin-top: 3rem;
+ 	}
+
+ 	.service_item {
+ 		width: 48.96%;
+ 	}
+
+ 	.service_item + .service_item {
+ 		margin-left: 0;
+ 	}
+
+ 	.service_item:nth-child(2n) {
+ 		margin-left: 2.08%;
+ 	}
+ }

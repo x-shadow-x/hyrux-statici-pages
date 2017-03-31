@@ -51,6 +51,7 @@
 @media only screen and (max-width: 768px) {
 	.footer_content {
 		text-align: center;
+		width: 100%;
 	}
 
 	.footer_content_box {
@@ -70,14 +71,14 @@
 	    -webkit-transform: none;
 	    -o-transform: none;
 	    text-align: left;
-	    padding: 0 4%;
 	    font-size: 0;
+	    padding: 4%;
 	}
 
 	.connect_list li {
 		display: inline-block;
 		width: 50%;
-		font-size: 1rem;
+		font-size: .85rem;
 	}
 
 	.footer_bar {
