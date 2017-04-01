@@ -1,0 +1,99 @@
+article h2 {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+article {
+	text-align: center;
+}
+
+article p {
+	margin-bottom: 2rem;
+	line-height: 2rem;
+}
+
+.service_table {
+	background: #fcfcfc;
+	width: 100%;
+	text-align: left;
+}
+
+.service_table td {
+	line-height: 1.5rem;
+	padding: 1rem;
+	vertical-align: middle;
+}
+
+.service_table tr + tr td {
+	border-top: 1px solid #ddd;
+}
+
+.service_table td + td {
+	border-left: 1px solid #ddd;
+}
+
+td.service_title {
+	background: #0e2f8a;
+	color: #fff;
+	font-weight: bolder;
+}
+
+.service_table h3 {
+	font-size: 1.3rem;
+}
+
+.service_item_box {
+    position: relative;
+    padding: 1rem 20px;
+}
+
+.service_item_box:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #0e2f8a;
+    border-radius: 100px;
+    left: 2px;
+    top: 1.75rem;
+    margin-top: -5px;
+}
+
+.notice {
+	text-align: left;
+	margin-top: 3rem;
+	margin-bottom: 4rem;
+}
+
+.service_table_mobile_box {
+	display: none;
+}
+
+.service_table_mobile_box table {
+ 	background: #f3f3f3;
+ }
+
+.service_table_mobile_box table + table {
+	margin-top: 2rem;
+}
+
+.service_table_mobile_box table td {
+	vertical-align: top;
+}
+
+.service_table_mobile_box table .service_title {
+	white-space: nowrap;
+	padding-right: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.service_table_pc_box {
+		display: none;
+	}
+
+	.service_table_mobile_box {
+		display: block;
+	}
+}
