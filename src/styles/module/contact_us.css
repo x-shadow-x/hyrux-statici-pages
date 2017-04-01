@@ -1,0 +1,191 @@
+.main_contain {
+	padding: 0;
+}
+
+.contact_box {
+	font-size: 0;
+	margin: 3rem 0;
+}
+
+.contact_info_box,
+.email_box {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+}
+
+.contact_item_box {
+	margin: 2rem 0;
+}
+
+.contact_item_name,
+.contact_item_content {
+	font-size: .95rem;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+
+.contact_item_name {
+	width: 30%;
+	color: #808080;
+}
+
+.contact_item_content {
+	width: 70%;
+}
+
+.contact_item_content p {
+	color: #333;
+}
+
+.contact_item_name .fa {
+	color: #0e2f8a;
+}
+
+.contact_item_name span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.email_box {
+	background: #0e2f8a;
+	color: #fff;
+	font-size: .95rem;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 1.5rem;
+	text-align: left;
+}
+
+.email_box p {
+	margin-bottom: 1rem;
+	line-height: 1.5rem;
+}
+
+.email_box input {
+	background: #fff;
+	border: none;
+	outline: none;
+	vertical-align: middle;
+	margin: 1% auto;
+	height: 2.4rem;
+	line-height: 2.4rem;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 5px;
+}
+
+.name_input {
+	width: 100%;
+}
+
+.email_input,
+.tel_input {
+	width: 49%;
+}
+
+.email_box .tel_input {
+	margin-left: 2%;
+}
+
+textarea {
+	background: #fff;
+	border: none;
+	outline: none;
+	resize: none;
+	width: 100%;
+	margin: 1% auto;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 5px;
+}
+
+.email_box .submit_btn {
+	background: none;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 0 3rem;
+	float: right;
+	cursor: pointer;
+	margin-bottom: 0;
+}
+
+.map_box {
+	padding-top: 24.236%;
+	position: relative;
+	overflow: hidden;
+}
+
+.google_map {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.contact_info_box,
+	.email_box {
+		width: 100%;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+
+	.contact_info_box {
+		padding-left: 1rem;
+		line-height: 1.5rem;
+		margin-bottom: 3rem;
+	}
+
+	.contact_item_box {
+		margin: 0 0 1rem 0;
+	}
+
+	.contact_item_name,
+	.contact_item_content {
+		display: block;
+		width: auto;
+	}
+
+	.contact_item_name .fa {
+		font-size: 1.5rem;
+	}
+
+	.contact_item_content {
+		margin-left: 10px;
+		padding-left: 1.5rem;
+		color: #333;
+		font-family: GothamMedium;
+	}
+
+	.email_box p {
+		text-align: left;
+	}
+
+	.email_input,
+	.tel_input {
+		width: 100%;
+	}
+
+	.email_box .tel_input {
+		margin-left: 0;
+	}
+
+	.email_box input {
+		margin: 0 auto 3% auto;
+	}
+
+	textarea {
+		margin: 0 auto 3% auto;
+	}
+
+	.map_box {
+		padding-top: 46.6%;
+	}
+}
