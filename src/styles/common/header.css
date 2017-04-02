@@ -1,5 +1,7 @@
 header {
 	background: #fff;
+	position: relative;
+	z-index: 2;
 }
 
 .header_bar {
