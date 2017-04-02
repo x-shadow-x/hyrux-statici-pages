@@ -220,7 +220,7 @@ td.service_title {
 	.service_box {
 		display: block;
 		width: auto;
-		padding: 0 0 2rem 0;
+		padding: 0;
 		margin-bottom: 1rem;
 	}
 

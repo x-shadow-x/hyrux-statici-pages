@@ -1,0 +1,139 @@
+.main_contain section  + section {
+	margin-top: 6rem;
+}
+
+section h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.step_box {
+	display: inline-block;
+	vertical-align: middle;
+	color: #b1b1b1;
+}
+
+.step_box:after,
+.step_box.done:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 14px;
+	height: 8px;
+	background: url('../images/arrow.png') center no-repeat;
+	background-size: auto 100%;
+	margin: 0 10px 0 0px;
+}
+
+.step_box.done:after {
+	background-image: url('../images/arrow_active.png');
+}
+
+.step_box:last-child:after {
+	display: none;
+}
+
+.step_box .step {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	border-radius: 100px;
+	background: #b1b1b1;
+	color: #fff;
+	margin-right: 5px;
+}
+
+.step_box .step i {
+	font-style: normal;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+
+.step_content {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.step_box.done {
+	color: #0e2f8a;
+}
+
+.step_box.done .step {
+	background: #0e2f8a;
+}
+
+.application_btn_box {
+	margin: 2rem auto;
+}
+
+.application_btn {
+	display: inline-block;
+	border-radius: 6px;
+	color: #fff;
+	background: #0e2f8a;
+	line-height: 3.6rem;
+	padding: 0 3rem;
+	min-width: 5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.banner_box {
+		position: relative;
+		padding-top: 87%;
+	}
+
+	.banner_box img {
+		width: auto;
+		height: 100%;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		z-index: -1;
+	}
+
+	.application_step {
+		text-align: left;
+	}
+
+	.application_step {
+		font-size: 0;
+	}
+
+	.step_box {
+		font-size: 1.2rem;
+		width: 50%;
+		line-height: 3.2rem;
+	}
+
+	.step_box {
+		position: relative;
+	}
+
+	.step_box:after,
+	.step_box.done:after {
+		margin-right: 0;
+		position: absolute;
+		right: 5%;
+		top: 54%;
+		transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+	}
+}

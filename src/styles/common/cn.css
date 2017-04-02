@@ -183,16 +183,9 @@ input, select {
     font-style: normal;
 }
 
-@media only screen and (max-width: 768px) {
-    .guide {
-        padding-left: 1.5rem;
-        box-sizing: border-box;
-    }
-}
-
 .main_contain {
     text-align: center;
-    padding: 8rem 0 4rem 0;
+    padding: 8rem 0 6rem 0;
     width: 96%;
     max-width: 1200px;
     margin: 0 auto;
@@ -229,9 +222,9 @@ input, select {
 
 .banner_pic_text_box {
     position: absolute;
-    left: 10%;
-    right: 10%;
-    bottom: 40%;
+    left: 6%;
+    right: 6%;
+    bottom: 30%;
 }
 
 .banner_pic_title,
@@ -254,7 +247,7 @@ input, select {
     font-family: GothamLight;
     font-weight: lighter;
     margin-top: 1rem;
-    max-width: 54%;
+    max-width: 55%;
     transform: scale(0, 1);
     -ms-transform: scale(0, 1);
     -moz-transform: scale(0, 1);
@@ -312,7 +305,7 @@ table tr:nth-child(odd){
     .banner_pic_text_box {
         bottom: auto;
         left: 50%;
-        top: 50%;
+        top: 64%;
         width: 90%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);

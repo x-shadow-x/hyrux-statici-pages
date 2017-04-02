@@ -1,5 +1,6 @@
+section h2,
 article h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-size: 1.8rem;
     color: #333;
 }
@@ -8,7 +9,8 @@ article {
 	text-align: center;
 }
 
-article p {
+section>p,
+article>p {
 	margin-bottom: 2rem;
 	line-height: 2rem;
 }
@@ -86,6 +88,51 @@ td.service_title {
 	white-space: nowrap;
 	padding-right: 2rem;
 }
+
+.notice_box {
+	text-align: left;
+	line-height: 2rem;
+	margin: 3rem 0 6rem 0;
+}
+
+.materials_box {
+	text-align: left;
+}
+
+.materials_head {
+	background: #0e2f8a;
+	color: #fff;
+	line-height: 4rem;
+	padding: 0 1rem;
+}
+
+.materials_item_lists li {
+	padding: 1rem 1rem 1rem 2rem;
+	line-height: 1.5rem;
+	position: relative;
+}
+
+.materials_item_lists li .order_num {
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+	width: 1rem;
+	height: 1.5rem;
+	list-style: 1.5rem;
+	text-align: center;
+}
+
+.materials_item_lists li + li {
+	border-top: 1px solid #ddd;
+}
+
+.materials_item_lists li:nth-child(odd) {
+	background: #f3f3f3;
+}
+
+.materials_item_lists li:nth-child(even) {
+ 	background: #fcfcfc;
+ }
 
 @media only screen and (max-width: 768px) {
 	

@@ -38,7 +38,9 @@
 	margin-top: -5px;
 }
 
-
+.calendar table tr {
+	background: #fff;
+}
 
 .daterangepicker .fa {
 	margin-right: 0;
